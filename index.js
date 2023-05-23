@@ -1,19 +1,43 @@
+// Prompt1
 
-let listOfTributes = [
+// let listOfTributes = [
+//     {
+//         name: "Katniss Everdeen",
+//         district: 12
+//     },
+//     {
+//         name: "Cato",
+//         district: 2
+//     }
+// ]
+
+
+
+// function declareTributes(listOfTributes){
+//     return `${listOfTributes.name} from district ${listOfTributes.district}`
+// }
+
+// console.log(listOfTributes.map(declareTributes)) 
+
+//Prompt2
+
+let toyInventory2023 = [
     {
-        name: "Katniss Everdeen",
-        district: 12
+        name: "Puzzle Game",
+        containsChemicals: true
     },
     {
-        name: "Cato",
-        district: 2
+        name: "Fidget Spinner",
+        containsChemicals: true
+    },
+    {
+        name: "Teddy Bear",
+        containsChemicals: false
     }
 ]
 
-
-
-function declareTributes(listOfTributes){
-    return `${listOfTributes.name} from district ${listOfTributes.district}`
+function removeFaultyToys(toyInventory){
+   return toyInventory.containsChemicals === false
 }
 
-console.log(listOfTributes.map(declareTributes))
+console.log(toyInventory2023.filter(removeFaultyToys))
